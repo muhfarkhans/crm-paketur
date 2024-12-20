@@ -18,6 +18,14 @@ Jalankan composer install untuk menginstal dependensi project.
 ```bash
     composer install
 ```
+Copy .env.example ke .env dan set database sesuai dengan db yang ada
+```bash
+    cp .env.example .env
+```
+Generate app key
+```bash
+    php artisan key:generate
+```
 Buat database dan jalankan php artisan migrate.
 ```bash
     php artisan migrate:fresh
